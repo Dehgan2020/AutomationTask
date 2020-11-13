@@ -16,9 +16,7 @@ public class LoginMain {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		// @Before
-
-		// public void launchBrowser() {
+		
 		// Setting up the property and launching the browser
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\sajad\\Desktop\\Programming\\World of Test\\Chrome Web Driver\\chromedriver_win32\\chromedriver.exe");
@@ -33,10 +31,6 @@ public class LoginMain {
 		// Setting some wait times
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-		// @Test
-
-		// public void clickOnRunBtn() {
-
 		// User clicks on the 'Run' button
 		WebElement runBtn = driver.findElement(By.id("run-button"));
 		runBtn.click();
@@ -47,7 +41,6 @@ public class LoginMain {
 		System.out.println("The output-pane contains this text: " + oupWin);
 		Assert.assertEquals("Hello World", oupWin);
 
-		// Test2
 
 		try {
 			
